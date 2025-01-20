@@ -1,0 +1,159 @@
+    /* Shared Styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+.big-display-hide{
+    display: none;
+}
+
+    /* Navigation Section */
+
+.a-class{
+    color: black;
+    text-decoration: none;
+}
+.li-item{
+    list-style: none;
+}
+#home-nav{
+    color: rgb(254, 163, 1);
+}
+#about-nav{
+    color: rgb(1, 172, 253);
+}
+#facilities-nav{
+    color: rgb(5, 212, 223);
+}
+#admission-nav{
+    color: rgb(93, 88, 239);
+}
+.contact-btn{
+    color: white;
+    padding: 11px 52px;
+    background-color: rgb(254, 163, 1);
+    border-radius: 12px;
+    border: none;
+}
+#school-bag-logo{
+    width: 62px;
+    height: 62px;
+}
+.brand-name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav-column-1{
+    display: flex;
+    gap: 11px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-column-2{
+    display: flex;
+    align-items: end;
+    gap: 2rem;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+    /* Banner Section */
+
+.banner-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+.banner-column-01{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+}
+.banner-title{
+    font-size: 3.5rem;
+}
+.banner-description{
+    font-size: 1.25rem;
+}
+.banner-btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(17, 17, 17);
+    padding: 11px 52px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+}
+    /* Footer Section */
+.footer-section{
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 172, 253);
+    height:auto;
+}
+.footer-img-brand-name{
+    display: flex;
+    gap: 16px;
+    justify-content: start;
+    align-items: center;
+}
+/* Responsive for Small screen devices */
+
+@media only screen and (max-width:576px) {
+    .display-hide{
+        display: none;
+    }
+    /* .nav-column-3{
+        background-image: url(../assets/three-stack-menu-logo.png);
+        background-position: cover;
+    } */
+    .nav-bar{
+        border-bottom: 0.5px solid rgb(254, 163, 1);
+        gap: 11rem;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 1.3rem;
+    }
+    .banner-column-01{
+       gap: 1.7rem; 
+    }
+    .banner-column-02 img{
+        width: 100%;
+    }
+    .banner-title{
+        text-align: center;
+        font-size: 2.6rem;
+        margin: 0 auto;
+    }
+    .banner-description{
+        font-weight: 500;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    #small-banner-br-hide{
+        display: none;
+    }
+    .banner-btn{
+        margin: 0 auto;
+        padding: 18px 35px;
+        font-size: 1.3rem;
+        /* font-weight: 700; */
+        margin-bottom: 1rem;
+    }
+}
