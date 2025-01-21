@@ -16,7 +16,7 @@
     /* Navigation Section */
 
 .a-class{
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .li-item{
@@ -103,12 +103,34 @@
     color: rgb(255, 255, 255);
     background-color: rgb(1, 172, 253);
     height:auto;
+    /* padding: 100px 0px 90px 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 18.43rem;
 }
 .footer-img-brand-name{
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     justify-content: start;
     align-items: center;
+}
+.list-item{
+    list-style: none;
+}
+.footer-column-02-title{
+    margin-bottom: 1.1rem;
+}
+.footer-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.1rem;
+}
+.footer-column-03{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
 }
 /* Responsive for Small screen devices */
 
@@ -124,17 +146,19 @@
         border-bottom: 0.5px solid rgb(254, 163, 1);
         gap: 11rem;
     }
+        /* Banner section small screen */
     .banner-section{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         gap: 1.3rem;
+        margin: 1rem;
     }
     .banner-column-01{
        gap: 1.7rem; 
     }
     .banner-column-02 img{
-        width: 100%;
+        width: calc(100% - 2rem);
     }
     .banner-title{
         text-align: center;
@@ -155,5 +179,12 @@
         font-size: 1.3rem;
         /* font-weight: 700; */
         margin-bottom: 1rem;
+    }
+    .footer-section{
+        flex-direction: column;
+        /* justify-content: start; */
+        align-items: start;
+        gap: 5rem;
+        padding-left: 1rem;
     }
 }
