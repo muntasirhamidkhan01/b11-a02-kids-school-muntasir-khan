@@ -68,7 +68,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
     /* Banner Section */
 
 .banner-section{
@@ -146,9 +145,12 @@
         display: none;
     }
     .nav-bar{
-        border-bottom: 0.5px solid rgb(254, 163, 1);
         justify-content: space-between;
         margin: 0rem 1rem 0rem 1rem;
+    }
+    .under-nav-hr{
+        display: block;
+        border: 0.5px solid rgb(254, 163, 1);
     }
         /* Banner section small screen */
     .banner-section{
