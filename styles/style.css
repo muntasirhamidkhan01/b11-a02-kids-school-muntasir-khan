@@ -209,7 +209,7 @@
     display: grid;
     grid-template-columns:repeat(3,1fr);
     gap: 1rem;
-    margin: 4rem 9.5rem;
+    margin: 4rem 11rem;
 }
 .box-1{
     /* grid-row-start: 1;
