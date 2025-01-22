@@ -209,6 +209,7 @@
     background-color: white;
     gap: 1rem;
     border-radius: 1rem;
+    overflow: hidden;
 }
 .box-1{
     /* grid-row-start: 1;
@@ -225,6 +226,7 @@
     position: relative;
     display: inline-block;
     display: block;
+    
 }
 .box-1 img{
     /* height: 51%; */
@@ -415,7 +417,7 @@
         padding-top: 1rem;
     }
     .stories-box-container{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin: 1rem;
         width: 90%;
     }
