@@ -99,8 +99,12 @@
     font-size: 1rem;
     cursor: pointer;
 }
+.marque{
+    color: rgb(0, 0, 0);
+    background-color:rgb(57, 192, 255);
+    padding-bottom: 3px;
+}
     /* three cards section */
-
 .three-cards-section{
     background-image: url(../assets/bg.png);
     background-size: cover;
