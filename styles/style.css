@@ -40,6 +40,7 @@
     background-color: rgb(254, 163, 1);
     border-radius: 12px;
     border: none;
+    cursor: pointer;
 }
 #school-bag-logo{
     width: 62px;
@@ -96,13 +97,14 @@
     border-radius: 12px;
     border: none;
     font-size: 1rem;
+    cursor: pointer;
 }
     /* three cards section */
 
 .three-cards-section{
     background-image: url(../assets/bg.png);
     background-size: cover;
-    background-position: cover;
+    background-position: left;
 }
 .three-cards-container{
     display: flex;
@@ -110,7 +112,7 @@
     align-items: center;
     gap: 1.8rem;
     /* gap: 4.6rem; */
-    margin: 3rem auto;
+    margin: 1rem auto 3rem auto;
 }
 .three-cards-title{
     font-size: 3rem;
@@ -151,16 +153,105 @@
     color: rgba(100, 200, 255, 1);
     background-color: white;
     border: none;
+    cursor: pointer;
 }
 .card-btn-2{
     color: rgb(240, 170, 0);
     background-color: white;
     border: none;
+    cursor: pointer;
 }
 .card-btn-3{
     color: rgb(135, 0, 255);
     background-color: white;
     border: none;
+    cursor: pointer;
+}
+.two-slide-btns-container{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem
+}
+.two-arrow-btns{
+    color: white;
+    border-radius: 30px;
+    background-color: rgb(254, 163, 1);
+    border: none;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+    /* Our Stories Section */
+.our-stories-section{
+    background-image: url(../assets/bg.png);
+    background-size:contain;
+    background-position: top;
+    padding-top: 6rem;
+    margin-bottom: 0rem;
+}
+.our-stories-linear{
+    background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+.stories-box-container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 1rem;
+    margin: 4rem 9rem;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 1rem;
+    border-radius: 1rem;
+}
+.box-1{
+    /* grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1 ; */
+    grid-column: span 1;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+.stories-title{
+    text-align: center;
+    font-size: 2rem;
+}
+.box-date{
+    color: white;
+    background-color: rgb(60, 216, 232);
+    border-radius: 47.93px;;
+    padding: 1rem 2rem;
+    width: 9rem;
+    margin: 0px;
+}
+.box-title{
+    margin-left: 1rem;
+}
+.box-description{
+    margin-left: 1rem;
+    color: rgba(102, 102, 102, 1);
+}
+.view-all-btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(17, 17, 17);
+    padding: 11px 52px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 3rem;
 }
     /* Footer Section */
 .footer-section{
@@ -206,12 +297,20 @@
 /* Responsive for Small screen devices */
 
 @media only screen and (max-width:576px) {
+        /* Shared Styles */
     .display-hide{
+        display: none;
+    }
+    #small-banner-br-hide{
         display: none;
     }
     .nav-bar{
         justify-content: space-between;
         margin: 0rem 1rem 0rem 1rem;
+        gap: 1rem;
+    }
+    .nav-column-4{
+        display: block;
     }
     .under-nav-hr{
         display: block;
@@ -245,44 +344,55 @@
         text-align: center;
         font-size: 0.8rem;
     }
-    #small-banner-br-hide{
-        display: none;
-    }
     .banner-btn{
         margin: 0 auto;
-        padding: 18px 35px;
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
+        padding: 12px 35px;
+        font-size: 1rem;
+        margin-bottom: 3rem;
     }
         /* .three cards section */
+    .three-cards-section{
+        background: none;
+    }
     .three-cards-container{
         flex-direction: column;
         gap: 1rem;
     }
     .card{
-        padding: 3rem 4rem;
+        /* padding: 3rem 4rem; */
+        width: 90vw;
     }
     .three-cards-title{
         padding: 0px;
         margin: 0px;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .card-description{
         font-size: 0.7rem;
+    }
+        /* Our Stories Section */
+    .our-stories-section{
+        background-image: none;
+    }
+    .stories-box-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 1rem;
+        width: 90%;
     }
         /* footer section small screen */
     .footer-section{
         flex-direction: column;
         align-items: start;
+        justify-content: start;
         gap: 2rem;
         padding: 0;
         padding-left: 1rem;
         /* padding-bottom: 8rem; */
-        height: 100vh;
+        height: 70vh;
     }
     .footer-column-01{
         gap: 1rem;
-        background-color: red;
+        /* background-color: red; */
         /* width: 32rem; */
     }
     .footer-column-03{
